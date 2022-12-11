@@ -1,0 +1,113 @@
+@import 'vars';
+
+@font-face {
+  font-family: Blogger-Sans;
+  src: url(./blogger-sans-font/Blogger-Sans.ttf);
+}
+
+.app {
+  font-family: "Blogger-Sans";
+  font-size: $fontSizeBase;
+  color: $colorDarkBase;
+
+  .btn-primary {
+    background-color: $colorDarkBase;
+    border-color: $colorDarkBase;
+    color: $colorLightBase
+  }
+  .btn-primary:hover {
+    background-color: $colorDark1;
+    border-color: $colorDark1;
+  }
+  .btn-primary:active {
+    background-color: $colorDark2 !important;
+    border-color: $colorDark2 !important;
+    box-shadow: 0 0 0 0.25rem $colorPaleBase2 !important;
+  }
+  .btn-primary:disabled {
+    background-color: $colorPaleBase;
+    border-color: $colorPaleBase;
+  }
+  .btn-primary:focus {
+    background-color: $colorDark2;
+    border-color: $colorDark2;
+    box-shadow: 0 0 0 0.25rem $colorPaleBase2;
+  }
+
+  .header {
+    height:70px;
+    background-color: $colorDarkBase;
+    color: $colorLightBase;
+    box-shadow: 0px 0px 5px 3px $colorPaleBase;
+    background-repeat: no-repeat;
+    background-image: url("./coffee.png");
+    background-position-x: 10px;
+    background-position-y: 3px;
+    font-size: 50px;
+    padding-left: 80px;
+    margin-bottom: 15px;
+  }
+
+  .justify-content-md-center {
+    .col-md-6, .col-md-1 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .assortment-btn {
+    margin-top: 10px;
+  }
+
+  .ready {
+    div {
+      text-align: center;
+      margin-top: 20px;
+    }
+    img {
+      box-shadow: 0px 0px 10px 3px $colorPaleBase;
+      border: 1px solid $colorDarkBase;
+    }
+  }
+}
+
+#ingredientsSelect {
+
+  #ingredientsSelect_input::placeholder {
+    color: $colorPaleBase;
+  }
+
+  .optionContainer {
+    border: 1px solid $colorDarkBase;
+  }
+
+  .notFound {
+    color: $colorPaleBase;   
+  }
+
+  li.option:hover, li.highlightOption {
+    background-color: $colorDarkBase;
+    color: $colorLightBase
+  }
+
+  .searchWrapper {
+    border: 1px solid $colorDarkBase;
+    border-radius: 4px;
+    padding: 5px;
+    position: relative;
+    min-height: 45px
+  }
+
+  .chip {
+    align-items: center;
+    background: $colorDarkBase;
+    border-radius: 11px;
+    color: $colorLightBase;
+    display: inline-flex;
+    font-size: $fontSizeBase;
+    line-height: 19px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 4px 10px;
+    white-space: nowrap;
+  }
+}
